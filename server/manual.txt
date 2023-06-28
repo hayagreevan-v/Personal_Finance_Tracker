@@ -1,0 +1,33 @@
+AUTHENTICATION :
+
+-> JWT AUTHENTICATION
+-> JWT is sent as cookie
+-> Validity 1 day
+
+PORT : 2000
+
+API ENDPOINTS :
+
+[POST] /user/signup :
+{
+    "username": "",
+    "password" : "",
+    "name": "",
+    "balance": <integer/double> <default: 0> 
+}
+
+[POST] /user/login :
+{
+    "username": "",
+    "password": ""
+}
+
+[GET] /transaction/ :
+<retrive all transaction of the logged in user>
+
+[POST] /transaction/add :
+{
+    "amount": <integer/double>
+    "description": "" <default: "no description provided">
+    "mode": "" <"credit"/"debit">
+}
